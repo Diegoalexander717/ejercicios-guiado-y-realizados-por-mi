@@ -8,20 +8,17 @@
 <script src="./js/script.js" defer></script>
 </head>
 <body>
+        <h1>Ejercicio 4 document</h1>
 
-    <h1>Ejercicio 1</h1>
+
+       <p id="mensaje">Texto original</p>
+    <button onclick="cambiarTexto()">Cambiar texto</button>
 
     <script>
-
-        let num1 = parseFloat(prompt("Ingrese el valor 1"));
-        let num2 = parseFloat(prompt("Ingrese el valor 2"));
-        let num3 = parseFloat(prompt("Ingrese el valor 3"));
-
-        let promedio = (num1 + num2 + num3) / 3;
-
-        alert("El promedio es: " + promedio);
-
+        function cambiarTexto(){
+            document.getElementById("mensaje").innerText = "Texto cambiado con JS"
+        }
     </script>
-
+    
 </body>
 </html>

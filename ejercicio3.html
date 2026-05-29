@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,20 +9,29 @@
 <script src="./js/script.js" defer></script>
 </head>
 <body>
+    
+     <h1>Ejercicio 3 solo</h1>
 
-    <h1>Ejercicio 1</h1>
+     <p id="texto">
+    Sistema desactivado
+</p>
 
-    <script>
+<button onclick="cambiarTexto()">
+    Activar
+</button>
 
-        let num1 = parseFloat(prompt("Ingrese el valor 1"));
-        let num2 = parseFloat(prompt("Ingrese el valor 2"));
-        let num3 = parseFloat(prompt("Ingrese el valor 3"));
+<script>
 
-        let promedio = (num1 + num2 + num3) / 3;
+function cambiarTexto() {
 
-        alert("El promedio es: " + promedio);
+    document.getElementById("texto").innerHTML =
+    "Bomba Activada";
 
-    </script>
+}
+
+</script>
+         
+
 
 </body>
 </html>
